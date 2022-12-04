@@ -1,12 +1,13 @@
 {
-  "version": "1.0.0",
-  "name": "vitepress-docs-template",
-  "description": "vitepress 的文档模板",
+  "name": "refs",
+  "version": "0.0.1",
+  "description": "可视化的 awesome，用于直观快速查找开发生态中的内容",
   "keywords": [
-    "docs",
-    "unocss",
-    "template",
-    "vitepress"
+    "go",
+    "deno",
+    "nodejs",
+    "awesome",
+    "visualization"
   ],
   "author": {
     "name": "markthree",
@@ -14,22 +15,19 @@
     "url": "https://github.com/markthree"
   },
   "license": "MIT",
-  "repository": "https://github.com/dishait/vitepress-docs-template",
+  "repository": "https://github.com/dishait/refs",
   "bugs": {
-    "email": "1801982702@qq.com",
-    "url": "https://github.com/dishait/vitepress-docs-template/issues"
+    "url": "https://github.com/dishait/refs/issues"
   },
-  "private": false,
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "@types/node": "^17.0.21",
-    "@vueuse/core": "^8.1.2",
-    "unocss": "^0.29.3",
-    "vite-plugin-inspect": "^0.4.3",
-    "vitepress": "^0.22.3"
+    "@types/node": "^18.11.10",
+    "@vueuse/core": "^9.6.0",
+    "unocss": "^0.47.5",
+    "vitepress": "^1.0.0-alpha.29"
   }
 }
