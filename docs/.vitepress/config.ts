@@ -1,3 +1,4 @@
+import { copyFile } from 'fs/promises'
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
@@ -38,6 +39,23 @@ export default defineConfig({
 			{
 				icon: 'github',
 				link: 'https://github.com/dishait/refs'
+			}
+		]
+	},
+	vite: {
+		plugins: [
+			{
+				name: 'moveStatic',
+				enforce: 'post',
+				apply: 'build',
+				buildEnd() {
+					setImmediate(() => {
+						copyFile(
+							'static.ts',
+							'docs/.vitepress/dist/static.ts'
+						)
+					})
+				}
 			}
 		]
 	}
