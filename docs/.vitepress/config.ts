@@ -6,7 +6,7 @@ export default defineConfig({
 	title: 'Refs',
 	description:
 		'可视化的 awesome，直观快速地查找开发生态中的内容',
-	head: [['link', { rel: 'icon', href: '/logo.svg' }]],
+	head: [['link', { rel: 'icon', href: 'favicon.png' }]],
 	themeConfig: {
 		logo: 'logo.svg',
 		footer: {
