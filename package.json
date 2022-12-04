@@ -2,6 +2,7 @@
   "name": "refs",
   "version": "0.0.1",
   "description": "可视化的 awesome，用于直观快速查找开发生态中的内容",
+  "packageManager": "pnpm@7.18.0",
   "keywords": [
     "go",
     "deno",
