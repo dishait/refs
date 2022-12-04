@@ -1,0 +1,5 @@
+{
+	"compilerOptions": {
+		"types": ["./docs/.vitepress/theme/env.d.ts"]
+	}
+}
