@@ -1,12 +1,9 @@
 name: Deno Deploy
 
-on:
-  push:
-    tags:
-      - v*
+on: push
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,14 +25,9 @@ jobs:
 
       - run: pnpm run build
 
-  deploy:
-    permissions:
-      id-token: write
-      contents: read
-    steps:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: refs
-          entrypoint: main.ts
+          entrypoint: static.ts
           root: docs/.vitepress/dist
