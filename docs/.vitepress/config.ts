@@ -29,10 +29,6 @@ export default defineConfig({
 			{
 				text: 'JavaScript',
 				link: '/javaScript/'
-			},
-			{
-				text: 'About',
-				link: '/about/'
 			}
 		],
 		socialLinks: [
