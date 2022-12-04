@@ -51,7 +51,7 @@ export default defineConfig({
 				buildEnd() {
 					setImmediate(() => {
 						copyFile(
-							'static.ts',
+							'depoly/static.ts',
 							'docs/.vitepress/dist/static.ts'
 						)
 					})

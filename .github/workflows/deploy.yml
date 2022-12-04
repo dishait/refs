@@ -1,13 +1,14 @@
-name: Deno Deploy
+name: Deploy
 
-on: push
+on: [push]
 
 jobs:
   deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
     permissions:
       id-token: write
       contents: read
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
