@@ -6,9 +6,6 @@ on:
       - v*
 
 jobs:
-  permissions:
-    id-token: write
-    contents: read
   build:
     runs-on: ubuntu-latest
     steps:
@@ -30,7 +27,11 @@ jobs:
       - run: pnpm install
 
       - run: pnpm run build
+
   deploy:
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
