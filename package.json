@@ -25,7 +25,7 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs",
-    "deno:serve": "cd docs/.vitepress/dist && deno run -A static.ts"
+    "serve:deno": "deno run -A https://deno.land/std@0.167.0/http/file_server.ts docs/.vitepress/dist"
   },
   "devDependencies": {
     "@antv/g6": "^4.7.16",

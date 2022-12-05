@@ -33,5 +33,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: refs
-          entrypoint: static.ts
+          entrypoint: https://deno.land/std@0.167.0/http/file_server.ts
           root: docs/.vitepress/dist
