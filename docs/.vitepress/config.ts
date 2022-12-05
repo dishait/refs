@@ -6,7 +6,7 @@ export default defineConfig({
 	title: 'Refs',
 	description:
 		'可视化的 awesome，直观快速地查找开发生态中的内容',
-	head: [['link', { rel: 'icon', href: 'favicon.png' }]],
+	head: [['link', { rel: 'icon', href: '/favicon.png' }]],
 	themeConfig: {
 		logo: 'logo.svg',
 		footer: {
@@ -47,7 +47,7 @@ export default defineConfig({
 				buildEnd() {
 					setImmediate(() => {
 						copyFile(
-							'depoly/static.ts',
+							'deploy/static.ts',
 							'docs/.vitepress/dist/static.ts'
 						)
 					})

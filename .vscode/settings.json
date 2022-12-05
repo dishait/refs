@@ -1,5 +1,11 @@
 {
+	"deno.enable": true,
+	"deno.enablePaths": ["./deploy/static.ts"],
 	"yaml.schemas": {
 		"https://json.schemastore.org/github-workflow.json": "file:///d%3A/Code/Work/refs/.github/workflows/deploy.yml"
+	},
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"readme*": "license, .gitignore, type.d.ts, package.json, pnpm-lock.yamlVersion"
 	}
 }

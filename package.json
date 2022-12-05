@@ -7,6 +7,7 @@
     "go",
     "deno",
     "nodejs",
+    "python",
     "awesome",
     "visualization"
   ],
@@ -23,12 +24,13 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "deno:serve": "cd docs/.vitepress/dist && deno run -A static.ts"
   },
   "devDependencies": {
+    "@antv/g6": "^4.7.16",
     "@types/node": "^18.11.10",
-    "@vueuse/core": "^9.6.0",
-    "unocss": "^0.47.5",
+    "insert-css": "^2.0.0",
     "vitepress": "^1.0.0-alpha.29"
   }
 }

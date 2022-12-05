@@ -1,4 +1,3 @@
-// @ts-nocheck
 /**
  * deno 的静态文件服务，支持 deno deploy
  */
