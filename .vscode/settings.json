@@ -1,6 +1,4 @@
 {
-	"deno.enable": true,
-	"deno.enablePaths": ["./deploy/static.ts"],
 	"yaml.schemas": {
 		"https://json.schemastore.org/github-workflow.json": "file:///d%3A/Code/Work/refs/.github/workflows/deploy.yml"
 	},
