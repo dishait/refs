@@ -32,6 +32,6 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: dishait-refs
+          project: refs
           entrypoint: https://deno.land/std@0.167.0/http/file_server.ts
           root: docs/.vitepress/dist
